@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@400;700&family=Rubik&display=swap');
+
+body{ 
+
+    background-color: green;
+    font-family:'Rubik', sans-serif;
+   
+    
+}
+.topo { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 20px;
+    background-color: aliceblue;
+    color: green;
+    border-radius: 20px;
+    padding: 4px 100px 4px 100px;
+    
+    
+}
+.principal { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: auto;
+    background-color: green;   
+    border-radius: 20px;
+
+}
+button{ 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.quina, .mega, .loto { 
+    color: #bef202;
+
+    
+    
+}
+.resultMEGA, .resultQUINA, .resultLotoFacil { 
+     margin: 10px 10px;
+    color: whitesmoke;
+
+}
+
+.foto { 
+    
+    border-radius: 10px;
+}
+.fotoSuper { 
+    width: 200px;
+    height: 40px;
+}
+
+.textMain { 
+    background-color: rgb(35, 187, 35);
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    width: 500px;
+    height: auto;
+}
+.titleMain { 
+   
+    padding: 10px;
+    color: white;
+    text-shadow: 2px  2px #070707 !important;
+    border-radius: 20px;
+    
+}
