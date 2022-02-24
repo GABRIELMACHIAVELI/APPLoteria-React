@@ -74,3 +74,13 @@ button{
     border-radius: 20px;
     
 }
+.mes { 
+    color: #ecb706 !important;
+    text-shadow: 1px 1px white;
+}
+
+.main{ 
+    background-color: #16920b;
+    color: whitesmoke;
+    border-radius: 25px;
+}

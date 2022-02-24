@@ -109,9 +109,9 @@ export default function DiaSorte() {
     <div className='resultLotoFacil d-flex justify-content-center text-center mx-auto'> 
        {SorteioDia()}
     </div>
-    
-    <div className='resultLotoFacil d-flex justify-content-center text-center mx-auto'> 
-       {SorteioMes()}
+    <h4 className='text-center text-white mes'>MÊS</h4>
+    <div className='resultLotoFacil d-flex justify-content-center text-center mx-auto mt-0 mb-0'> 
+        {SorteioMes()}
     </div>
     
   

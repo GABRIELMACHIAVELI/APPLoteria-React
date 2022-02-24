@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@400;700&family=Rubik&display=swap');
+
+body{ 
+
+    background-color: green;
+    font-family:'Rubik', sans-serif;
+   
+    
+}
+
+.pgResultados 
+{
+    margin-top: 20px;
+    background-color: rgb(23, 122, 14);
+   
+
+}
+.text-resultados { 
+    color: whitesmoke;
+}
+.navResult { 
+    
+}

@@ -1,18 +1,16 @@
-//token: KRhL2XgMnrCe9bW
-
-import React from 'react';
+import React from 'react'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import "../Resultados/ResultadosLote.css";
-
 
 const API_KEY = 'KRhL2XgMnrCe9bW'; 
 const API_BASE = 
            axios.create({ baseURL: 'https://apiloterias.com.br/app/',})
 
+export default function ResultMega()
 
-export default function ResultadosLote() {
-   const [resultadoMega, setResultadoMega] = useState([])
+{
+    const [resultadoMega, setResultadoMega] = useState([])
     useEffect(() => {
         API_BASE
           .get("resultado?loteria=megasena&token=KRhL2XgMnrCe9bW&concurso=[NUMERO_DO_CONCURSO]")
@@ -21,13 +19,9 @@ export default function ResultadosLote() {
             console.error("ops! ocorreu um erro" + err);
           });
       }, []);
-      
-      
-
-      
-
-     return (
-       <> <div className='container main row mb-5'>
+   
+  return (
+    <div className='container main row'>
             <div className='text-center mt-5 row'>
                 <h2 className='mb-3 megaResult display-3'> {resultadoMega?.nome}</h2>
                 <div className='col-md-4'> 
@@ -66,10 +60,6 @@ export default function ResultadosLote() {
 
               
             </div>
-                    
-            
           
-        </>
-     )
-  
+  )
 }
