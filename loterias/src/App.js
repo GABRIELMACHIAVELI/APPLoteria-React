@@ -22,6 +22,7 @@ import ResultQuina from './services/Resultados/ResultQuina';
 import ResultMega from './services/Resultados/ResultMega';
 import ResultDiaSorte from './services/Resultados/ResultDiaSorte';
 import ResultSuper from './services/Resultados/ResultSuper';
+import ResultLotomania from './services/Resultados/ResultLotomania';
 
 
 
@@ -43,6 +44,7 @@ export default function App() {
               <Route element={<ResultMega/>}  path='/Resultados/MegaSena'/>
               <Route element={<ResultDiaSorte/>}  path='/Resultados/DiadeSorte'/>
               <Route element={<ResultSuper/>}  path='/Resultados/SuperSete'/>
+              <Route element={<ResultLotomania/>}  path='/Resultados/Lotomania'/>
               <Route element={<ComoJogar/>} path='/ComoJogar' />
               </Routes>
               
@@ -52,10 +54,10 @@ export default function App() {
              
 
 
-              <div className='textMain container text-center '>
+              <div className='textMain container text-center shadow-lg '>
                 
-                <h2 className='text-uppercase titleMain shadow-lg '> Está sem palpite? </h2> <br/>
-                <h2 className='text-uppercase titleMain shadow-lg'> Sorteie e aposte</h2> </div>
+                <h2 className='titleMain mt-5'> Está sem palpite? <br/>
+                 <strong className='text-uppercase'>Sorteie e aposte </strong></h2> </div>
               <div className='principal container shadow-lg'> 
               
               

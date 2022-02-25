@@ -21,6 +21,16 @@ export default function ResultMega()
       }, []);
    
   return (
+    <div className='pgResultados container'>
+       <nav className="nav d-flex justify-content-center navResult">
+        <a className="nav-link active btn btn-success me-2" href="/Resultados/MegaSena">Mega-Sena</a>
+        <a className="nav-link active btn btn-success me-2" href="/Resultados/Quina">Quina</a>
+        <a className="nav-link active btn btn-success me-2" href="/Resultados/Lotofacil">Lotofácil</a>
+        <a className="nav-link active btn btn-success me-2" href="/Resultados/Lotomania">Lotomania</a>
+        <a className="nav-link active btn btn-success me-2" href="/Resultados/DiadeSorte">Dia de Sorte</a>
+        <a className="nav-link active btn btn-success" href="/Resultados/SuperSete">Super Sete</a>
+       
+      </nav>
     <div className='container main row'>
             <div className='text-center mt-5 row'>
                 <h2 className='mb-3 megaResult display-3'> {resuladoSuper?.nome}</h2>
@@ -60,7 +70,7 @@ export default function ResultMega()
 
               
             </div>
-          
+            </div>
   )
 }
 

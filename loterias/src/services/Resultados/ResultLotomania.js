@@ -12,11 +12,11 @@ const API_BASE =
 
 export default function ResultLotoFacil() {
 
-    const [resultadoLotofacil, setLotofacil] = useState([])
+    const [resultadoLotomania, setLotomania] = useState([])
     useEffect(() => {
         API_BASE
-          .get("resultado?loteria=lotofacil&token=KRhL2XgMnrCe9bW&concurso=[NUMERO_DO_CONCURSO]")
-          .then((response) => setLotofacil(response.data))
+          .get("resultado?loteria=lotomania&token=KRhL2XgMnrCe9bW&concurso=[NUMERO_DO_CONCURSO]")
+          .then((response) => setLotomania(response.data))
           .catch((err) => {
             console.error("ops! ocorreu um erro" + err);
           });
@@ -36,26 +36,26 @@ export default function ResultLotoFacil() {
       </nav>
           <div className='container main row'>
             <div className='text-center mt-5 row'>
-                <h2 className='mb-3 megaResult display-3'> {resultadoLotofacil?.nome}</h2>
+                <h2 className='mb-3 megaResult display-3'> {resultadoLotomania?.nome}</h2>
                 <div className='col-md-4'> 
-                <p> <strong>Concurso: </strong>  {resultadoLotofacil?.numero_concurso}</p>
+                <p> <strong>Concurso: </strong>  {resultadoLotomania?.numero_concurso}</p>
                 </div>
                <div className='col-md-4'>
-                  <p> <strong>Data: </strong> {resultadoLotofacil?.data_concurso}</p>
+                  <p> <strong>Data: </strong> {resultadoLotomania?.data_concurso}</p>
                 </div>
                 <div className='col-md-4'> 
-                <p> <strong>Próximo concurso: </strong>{resultadoLotofacil?.data_proximo_concurso}</p> </div>
+                <p> <strong>Próximo concurso: </strong>{resultadoLotomania?.data_proximo_concurso}</p> </div>
                <div className='d-flex justify-content-center'>
                <div className='col-md-4'> 
                <h2 className='text-center display-4'> Dezenas</h2>
-               <h2 className='dezenasMEGA'>  {resultadoLotofacil?.dezenas?.join("-")}</h2>
+               <h2 className='dezenasMEGA'>  {resultadoLotomania?.dezenas?.join("-")}</h2>
                </div>
                  </div> 
                 
                 
                
                      <section> 
-                     <div>{resultadoLotofacil?.premiacao?.map((num, nome) => 
+                     <div>{resultadoLotomania?.premiacao?.map((num, nome) => 
                         (<div key={nome}>
                               <div className='display-5'> {num?.nome} </div> <br/>
                               <div> Número de ganhadores {num?.quantidade_ganhadores} </div><br/>

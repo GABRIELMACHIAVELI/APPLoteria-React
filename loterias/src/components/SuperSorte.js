@@ -42,7 +42,7 @@ export default function SuperSorte() {
    
     </div>
   <div className='resultLotoFacil d-flex justify-content-center text-center mx-auto'> 
-    <div className='row col-8 d-flex justify-content-center mx-auto'> 
+    <div className='row col-3 d-flex justify-content-center mx-auto'> 
         <div className='col-1 border border-warning'> 1</div>
         <div className='col-1 border border-warning'>2</div>
         <div className='col-1 border border-warning'>3</div>
@@ -50,7 +50,7 @@ export default function SuperSorte() {
         <div className='col-1 border border-warning'>5</div>
         <div className='col-1 border border-warning'>6</div>
         <div className='col-1 border border-warning'>7</div>
-       {SorteioSuperSete()}
+       <div> {SorteioSuperSete()} </div>
        </div>
     </div>
   </>
